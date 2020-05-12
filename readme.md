@@ -49,50 +49,50 @@ machine learning model.
 - Kelima, siapkan node Table to Spark</br>
 ![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/5.jpg "DPKelima")<br/>
 - Keenam dapatlah hasil seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/6.jpg"DPKeenam")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/6.jpg "DPKeenam")<br/>
 
 
 ## Modeling (MLib)
 - Pertama, gunakan node Spark k-Means untuk melakukan train pada tabel sebelumnya</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/7.jpg"MPertama")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/7.jpg "MPertama")<br/>
 - Kedua, atur node Spark k-Means seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/8.jpg"MKedua")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/8.jpg "MKedua")<br/>
 - Ketiga, gunakan node Spark MLIB to PMML agar mengubah model dari spark menjadi PMML</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/9.jpg"MKetiga")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/9.jpg "MKetiga")<br/>
 - Keempat, gunakan node PMML Compiler agar bisa dijalankan oleh node Compiled Model Predictor</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/10.jpg"MKeempat")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/10.jpg "MKeempat")<br/>
 - Kelima, setting PMML Compiler seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/11.jpg"MKelima")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/11.jpg "MKelima")<br/>
 
 
 ## Evaluation (MLib)
 - Pertama, ambil data lagi dari File Reader sebagai test data</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/12.jpg"EPertama")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/12.jpg "EPertama")<br/>
 - Kedua, atur File Reader seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/13.jpg"EKedua")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/13.jpg "EKedua")<br/>
 - Ketiga, gunakan node Compiled Model Predictor untuk mendapati hasil dari entropynya</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/14.jpg"EKetiga")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/14.jpg "EKetiga")<br/>
 - Keempat, dapat dicek hasil dari Compiled Model Predictor pada gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/15.jpg"EKeempat")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/15.jpg "EKeempat")<br/>
 - Kelima, gunakan node Entropy Scorer untuk melakukan perhitungan</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/16.jpg"EKelima")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/16.jpg "EKelima")<br/>
 - Keenam, cek hasil perhitungan tersebut seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/17.jpg"EKeenam")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/17.jpg "EKeenam")<br/>
 
 
 ## Deployment (MLib)
 - Pertama, dari data yang sudah diprediksi, kita gunakan node dengan format json, dan gunakan node JSON to Table</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/18.jpg"DPertama")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/18.jpg "DPertama")<br/>
 - Kedua, atur pada node Container Input (JSON) seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/19.jpg"DKedua")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/19.jpg "DKedua")<br/>
 - Ketiga, gunakan node Compiled Model Predictor, Table to JSON, dan Container Output (JSON)</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/20.jpg"DKetiga")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/20.jpg "DKetiga")<br/>
 - Keempat, setelah dijalankan semua akan ada hasil seperti gambar di bawah</br>
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/21.jpg"DKeempat")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/21.jpg "DKeempat")<br/>
 
 
 ## Workflow Keseluruhan
-![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/22.jpg"WFKeseluruhan")<br/>
+![alt text](https://github.com/ikul1234/BigData_Tugas6/blob/master/Screenshot/22.jpg "WFKeseluruhan")<br/>
 
 
 # Spark Compiled Model Predictor
